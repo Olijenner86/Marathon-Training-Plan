@@ -1,206 +1,342 @@
 [
-  [
-    "6 km easy + 4 strides",
-    "6 km easy",
-    "5 km easy",
-    "9 km long"
-  ],
-  [
-    "7 km incl 4×2 min steady",
-    "6 km easy",
-    "5 km Parkrun/easy",
-    "10 km long"
-  ],
-  [
-    "6 km easy + strides",
-    "6 km easy",
-    "5 km easy",
-    "8 km recovery"
-  ],
-  [
-    "7 km incl 3×5 min tempo",
-    "6 km easy",
-    "5 km easy",
-    "11 km long"
-  ],
-  [
-    "8 km incl 4×3 min tempo",
-    "6 km easy",
-    "5 km Parkrun/easy",
-    "12 km long"
-  ],
-  [
-    "8 km incl 15 min tempo",
-    "7 km easy",
-    "5 km Parkrun controlled",
-    "13 km long"
-  ],
-  [
-    "6 km easy + strides",
-    "6 km easy",
-    "5 km easy",
-    "10 km recovery"
-  ],
-  [
-    "8 km incl 4×1 km controlled",
-    "7 km easy",
-    "5 km Parkrun",
-    "14 km long"
-  ],
-  [
-    "8 km incl 20 min tempo",
-    "7 km easy",
-    "6 km steady",
-    "15 km long"
-  ],
-  [
-    "9 km incl 3×8 min threshold",
-    "7 km easy",
-    "5 km easy/Parkrun",
-    "16 km long"
-  ],
-  [
-    "7 km easy + strides",
-    "7 km easy",
-    "5 km easy",
-    "12 km recovery"
-  ],
-  [
-    "9 km incl 4×1 km",
-    "8 km easy",
-    "6 km steady",
-    "17 km long"
-  ],
-  [
-    "9 km incl 20 min tempo",
-    "8 km easy",
-    "5 km Parkrun",
-    "18 km long"
-  ],
-  [
-    "10 km incl 3×2 km threshold",
-    "8 km easy",
-    "6 km steady",
-    "16 km long"
-  ],
-  [
-    "8 km easy",
-    "7 km easy",
-    "5 km easy",
-    "13 km recovery"
-  ],
-  [
-    "10 km incl 4×2 km threshold",
-    "9 km easy",
-    "6 km easy",
-    "20 km long"
-  ],
-  [
-    "10 km incl 5×1 km",
-    "9 km easy",
-    "7 km steady",
-    "22 km long"
-  ],
-  [
-    "10 km incl 3×2 km",
-    "9 km easy",
-    "6 km easy",
-    "18 km recovery"
-  ],
-  [
-    "11 km incl 25 min tempo",
-    "10 km easy",
-    "7 km steady",
-    "24 km long"
-  ],
-  [
-    "11 km incl 5×1 km",
-    "10 km easy",
-    "7 km easy",
-    "25 km long"
-  ],
-  [
-    "11 km incl 2×3 km @ 5:30–5:35",
-    "10 km easy",
-    "6 km easy",
-    "21 km long"
-  ],
-  [
-    "12 km incl 4×2 km",
-    "10 km easy",
-    "7 km easy",
-    "27 km long"
-  ],
-  [
-    "8 km easy",
-    "8 km easy",
-    "5 km easy",
-    "20 km long"
-  ],
-  [
-    "12 km: 2 easy + 6 @ 5:30–5:35 + 4 easy",
-    "10 km easy",
-    "6 km easy",
-    "26 km long"
-  ],
-  [
-    "11 km incl 5×1 km @ 4:45–4:55",
-    "10 km easy",
-    "8 km steady",
-    "30 km long"
-  ],
-  [
-    "9 km easy",
-    "9 km easy",
-    "5 km Parkrun",
-    "22 km long"
-  ],
-  [
-    "13 km incl 3×3 km @ 5:25–5:35",
-    "10 km easy",
-    "7 km easy",
-    "28 km long"
-  ],
-  [
-    "12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy",
-    "10 km easy",
-    "6 km easy",
-    "32 km long"
-  ],
-  [
-    "10 km incl 5×1 km threshold",
-    "9 km easy",
-    "6 km easy",
-    "24 km long"
-  ],
-  [
-    "11 km incl 6 km marathon pace",
-    "9 km easy",
-    "6 km easy",
-    "28 km long"
-  ],
-  [
-    "12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy",
-    "10 km easy",
-    "6 km easy",
-    "30 km long"
-  ],
-  [
-    "10 km incl 4×1 km",
-    "9 km easy",
-    "6 km easy",
-    "22 km long"
-  ],
-  [
-    "9 km incl 5 km marathon pace",
-    "8 km easy",
-    "5 km easy",
-    "18 km long"
-  ],
-  [
-    "8 km incl 4 km marathon pace",
-    "7 km easy",
-    "3 km easy + 4×20-sec strides",
-    "EDINBURGH MARATHON · 42.2 km · 3:55 target"
-  ]
+  {
+    "week": 1,
+    "dates": "5–11 Oct 2026",
+    "runs": [
+      "6 km easy + 4 strides",
+      "6 km easy",
+      "5 km easy",
+      "9 km long"
+    ]
+  },
+  {
+    "week": 2,
+    "dates": "12–18 Oct 2026",
+    "runs": [
+      "7 km incl 4×2 min steady",
+      "6 km easy",
+      "5 km Parkrun / easy",
+      "10 km long"
+    ]
+  },
+  {
+    "week": 3,
+    "dates": "19–25 Oct 2026",
+    "runs": [
+      "6 km easy + strides",
+      "6 km easy",
+      "5 km easy",
+      "8 km recovery"
+    ]
+  },
+  {
+    "week": 4,
+    "dates": "26 Oct–1 Nov 2026",
+    "runs": [
+      "7 km incl 3×5 min tempo",
+      "6 km easy",
+      "5 km easy",
+      "11 km long"
+    ]
+  },
+  {
+    "week": 5,
+    "dates": "2–8 Nov 2026",
+    "runs": [
+      "8 km incl 4×3 min tempo",
+      "6 km easy",
+      "5 km Parkrun / easy",
+      "12 km long"
+    ]
+  },
+  {
+    "week": 6,
+    "dates": "9–15 Nov 2026",
+    "runs": [
+      "8 km incl 15 min tempo",
+      "7 km easy",
+      "5 km Parkrun controlled",
+      "13 km long"
+    ]
+  },
+  {
+    "week": 7,
+    "dates": "16–22 Nov 2026",
+    "runs": [
+      "6 km easy + strides",
+      "6 km easy",
+      "5 km easy",
+      "10 km recovery"
+    ]
+  },
+  {
+    "week": 8,
+    "dates": "23–29 Nov 2026",
+    "runs": [
+      "8 km incl 4×1 km controlled",
+      "7 km easy",
+      "5 km Parkrun",
+      "14 km long"
+    ]
+  },
+  {
+    "week": 9,
+    "dates": "30 Nov–6 Dec 2026",
+    "runs": [
+      "8 km incl 20 min tempo",
+      "7 km easy",
+      "6 km steady",
+      "15 km long"
+    ]
+  },
+  {
+    "week": 10,
+    "dates": "7–13 Dec 2026",
+    "runs": [
+      "9 km incl 3×8 min threshold",
+      "7 km easy",
+      "5 km easy / Parkrun",
+      "16 km long"
+    ]
+  },
+  {
+    "week": 11,
+    "dates": "14–20 Dec 2026",
+    "runs": [
+      "7 km easy + strides",
+      "7 km easy",
+      "5 km easy",
+      "12 km recovery"
+    ]
+  },
+  {
+    "week": 12,
+    "dates": "21–27 Dec 2026",
+    "runs": [
+      "9 km incl 4×1 km",
+      "8 km easy",
+      "6 km steady",
+      "17 km long"
+    ]
+  },
+  {
+    "week": 13,
+    "dates": "28 Dec 2026–3 Jan 2027",
+    "runs": [
+      "9 km incl 20 min tempo",
+      "8 km easy",
+      "5 km Parkrun",
+      "18 km long"
+    ]
+  },
+  {
+    "week": 14,
+    "dates": "4–10 Jan 2027",
+    "runs": [
+      "10 km incl 3×2 km threshold",
+      "8 km easy",
+      "6 km steady",
+      "16 km long"
+    ]
+  },
+  {
+    "week": 15,
+    "dates": "11–17 Jan 2027",
+    "runs": [
+      "8 km easy",
+      "7 km easy",
+      "5 km easy",
+      "13 km recovery"
+    ]
+  },
+  {
+    "week": 16,
+    "dates": "18–24 Jan 2027",
+    "runs": [
+      "10 km incl 4×2 km threshold",
+      "9 km easy",
+      "6 km easy",
+      "20 km long"
+    ]
+  },
+  {
+    "week": 17,
+    "dates": "25–31 Jan 2027",
+    "runs": [
+      "10 km incl 5×1 km",
+      "9 km easy",
+      "7 km steady",
+      "22 km long"
+    ]
+  },
+  {
+    "week": 18,
+    "dates": "1–7 Feb 2027",
+    "runs": [
+      "10 km incl 3×2 km",
+      "9 km easy",
+      "6 km easy",
+      "18 km recovery"
+    ]
+  },
+  {
+    "week": 19,
+    "dates": "8–14 Feb 2027",
+    "runs": [
+      "11 km incl 25 min tempo",
+      "10 km easy",
+      "7 km steady",
+      "24 km long"
+    ]
+  },
+  {
+    "week": 20,
+    "dates": "15–21 Feb 2027",
+    "runs": [
+      "11 km incl 5×1 km",
+      "10 km easy",
+      "7 km easy",
+      "25 km long"
+    ]
+  },
+  {
+    "week": 21,
+    "dates": "22–28 Feb 2027",
+    "runs": [
+      "11 km incl 2×3 km @ 5:30–5:35",
+      "10 km easy",
+      "6 km easy",
+      "21 km long"
+    ]
+  },
+  {
+    "week": 22,
+    "dates": "1–7 Mar 2027",
+    "runs": [
+      "12 km incl 4×2 km",
+      "10 km easy",
+      "7 km easy",
+      "27 km long"
+    ]
+  },
+  {
+    "week": 23,
+    "dates": "8–14 Mar 2027",
+    "runs": [
+      "8 km easy",
+      "8 km easy",
+      "5 km easy",
+      "20 km long"
+    ]
+  },
+  {
+    "week": 24,
+    "dates": "15–21 Mar 2027",
+    "runs": [
+      "12 km: 2 easy + 6 @ 5:30–5:35 + 4 easy",
+      "10 km easy",
+      "6 km easy",
+      "26 km long"
+    ]
+  },
+  {
+    "week": 25,
+    "dates": "22–28 Mar 2027",
+    "runs": [
+      "11 km incl 5×1 km @ 4:45–4:55",
+      "10 km easy",
+      "8 km steady",
+      "30 km long"
+    ]
+  },
+  {
+    "week": 26,
+    "dates": "29 Mar–4 Apr 2027",
+    "runs": [
+      "9 km easy",
+      "9 km easy",
+      "5 km Parkrun",
+      "22 km long"
+    ]
+  },
+  {
+    "week": 27,
+    "dates": "5–11 Apr 2027",
+    "runs": [
+      "13 km incl 3×3 km @ 5:25–5:35",
+      "10 km easy",
+      "7 km easy",
+      "28 km long"
+    ]
+  },
+  {
+    "week": 28,
+    "dates": "12–18 Apr 2027",
+    "runs": [
+      "12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy",
+      "10 km easy",
+      "6 km easy",
+      "32 km long"
+    ]
+  },
+  {
+    "week": 29,
+    "dates": "19–25 Apr 2027",
+    "runs": [
+      "10 km incl 5×1 km threshold",
+      "9 km easy",
+      "6 km easy",
+      "24 km long"
+    ]
+  },
+  {
+    "week": 30,
+    "dates": "26 Apr–2 May 2027",
+    "runs": [
+      "11 km incl 6 km marathon pace",
+      "9 km easy",
+      "6 km easy",
+      "28 km long"
+    ]
+  },
+  {
+    "week": 31,
+    "dates": "3–9 May 2027",
+    "runs": [
+      "12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy",
+      "10 km easy",
+      "6 km easy",
+      "30 km long"
+    ]
+  },
+  {
+    "week": 32,
+    "dates": "10–16 May 2027",
+    "runs": [
+      "10 km incl 4×1 km",
+      "9 km easy",
+      "6 km easy",
+      "22 km long"
+    ]
+  },
+  {
+    "week": 33,
+    "dates": "17–23 May 2027",
+    "runs": [
+      "9 km incl 5 km marathon pace",
+      "8 km easy",
+      "5 km easy",
+      "18 km long"
+    ]
+  },
+  {
+    "week": 34,
+    "dates": "24–30 May 2027",
+    "runs": [
+      "8 km incl 4 km marathon pace",
+      "7 km easy",
+      "3 km easy + 4×20-sec strides",
+      "EDINBURGH MARATHON — 42.2 km"
+    ]
+  }
 ]
