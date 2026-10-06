@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Edinburgh Marathon">
+<link rel="manifest" href="manifest.json">
+<title>Edinburgh Marathon 2027</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Arial,sans-serif;color:#111827;background:#f3f4f6}
+*{box-sizing:border-box}body{margin:0}.app{max-width:760px;margin:auto;padding:calc(18px + env(safe-area-inset-top)) 16px calc(30px + env(safe-area-inset-bottom))}
+header{margin-bottom:16px}.eyebrow{font-size:13px;color:#6b7280}.title{font-size:27px;font-weight:800;margin:4px 0}.sub{color:#6b7280;font-size:14px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:18px;padding:16px;margin:12px 0}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.metric{background:#f9fafb;border-radius:12px;padding:10px}.metric b{display:block;font-size:17px}.metric small{color:#6b7280}
+.progress{height:9px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:#111827;width:0}
+button{font:inherit;border:1px solid #d1d5db;background:white;border-radius:11px;padding:10px 13px;min-height:44px}.primary{background:#111827;color:white;border-color:#111827}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.week{border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:white;margin:10px 0}.weekhead{padding:13px 15px;background:#f9fafb;display:flex;justify-content:space-between;gap:10px}.weekhead span{color:#6b7280;font-size:13px}
+.run{display:flex;align-items:center;gap:12px;padding:13px 15px;border-top:1px solid #eef0f2}.run input{width:28px;height:28px;accent-color:#111827}.run.done{opacity:.55}.run.done .name{text-decoration:line-through}.name{font-weight:650}.date{display:block;color:#6b7280;font-size:13px;margin-top:3px}
+.notice{font-size:13px;color:#6b7280;line-height:1.45}.garmin{display:flex;align-items:center;gap:8px;font-weight:700}.dot{width:9px;height:9px;border-radius:50%;background:#6b7280}.edit{width:100%;min-height:90px;border:1px solid #d1d5db;border-radius:12px;padding:10px;font:inherit;resize:vertical}
+@media(max-width:500px){.metrics{grid-template-columns:repeat(2,1fr)}.title{font-size:24px}}
+</style>
+</head>
+<body>
+<main class="app" id="app">
+<header><div class="eyebrow">TRAINING PLAN</div><div class="title">Edinburgh Marathon 2027</div><div class="sub">30 May 2027 · 3:55 target · 5:34/km</div></header>
+<section class="card">
+<div style="display:flex;justify-content:space-between;gap:10px"><b>Overall progress</b><b id="count">0 / 136</b></div>
+<div class="progress"><span id="bar"></span></div><div id="pct" class="sub">0% completed</div>
+<div class="metrics" style="margin-top:12px"><div class="metric"><small>Goal</small><b>3:55</b></div><div class="metric"><small>Goal pace</small><b>5:34</b></div><div class="metric"><small>Peak long run</small><b>32 km</b></div><div class="metric"><small>Pattern</small><b>2/2/4</b></div></div>
+</section>
+<section class="card"><div class="garmin"><span class="dot"></span> Garmin Connect</div><p class="notice">This version is ready for Garmin activity matching. Once the Garmin integration is connected, a recorded run can automatically mark the matching planned session complete and store its distance, pace, time, heart rate and elevation.</p><div class="notice"><b>Current status:</b> connection not configured.</div></section>
+<div class="actions"><button class="primary" id="next">Next 4 runs</button><button id="full">Full plan</button><button id="reset">Reset ticks</button></div>
+<section id="plan"></section>
+<section class="card"><b>Edit notes</b><p class="notice">Add anything you want to remember about the programme.</p><textarea id="notes" class="edit" placeholder="e.g. calf felt tight, changed route, race result..."></textarea></section>
+<p class="notice">Your long run (Run 4) is prioritised for your days off around the 2 day / 2 night / 4 day shift cycle.</p>
+</main>
+<script>
+const runs = [["6 km easy + 4 strides", "6 km easy", "5 km easy", "9 km long"], ["7 km incl 4×2 min steady", "6 km easy", "5 km Parkrun/easy", "10 km long"], ["6 km easy + strides", "6 km easy", "5 km easy", "8 km recovery"], ["7 km incl 3×5 min tempo", "6 km easy", "5 km easy", "11 km long"], ["8 km incl 4×3 min tempo", "6 km easy", "5 km Parkrun/easy", "12 km long"], ["8 km incl 15 min tempo", "7 km easy", "5 km Parkrun controlled", "13 km long"], ["6 km easy + strides", "6 km easy", "5 km easy", "10 km recovery"], ["8 km incl 4×1 km controlled", "7 km easy", "5 km Parkrun", "14 km long"], ["8 km incl 20 min tempo", "7 km easy", "6 km steady", "15 km long"], ["9 km incl 3×8 min threshold", "7 km easy", "5 km easy/Parkrun", "16 km long"], ["7 km easy + strides", "7 km easy", "5 km easy", "12 km recovery"], ["9 km incl 4×1 km", "8 km easy", "6 km steady", "17 km long"], ["9 km incl 20 min tempo", "8 km easy", "5 km Parkrun", "18 km long"], ["10 km incl 3×2 km threshold", "8 km easy", "6 km steady", "16 km long"], ["8 km easy", "7 km easy", "5 km easy", "13 km recovery"], ["10 km incl 4×2 km threshold", "9 km easy", "6 km easy", "20 km long"], ["10 km incl 5×1 km", "9 km easy", "7 km steady", "22 km long"], ["10 km incl 3×2 km", "9 km easy", "6 km easy", "18 km recovery"], ["11 km incl 25 min tempo", "10 km easy", "7 km steady", "24 km long"], ["11 km incl 5×1 km", "10 km easy", "7 km easy", "25 km long"], ["11 km incl 2×3 km @ 5:30–5:35", "10 km easy", "6 km easy", "21 km long"], ["12 km incl 4×2 km", "10 km easy", "7 km easy", "27 km long"], ["8 km easy", "8 km easy", "5 km easy", "20 km long"], ["12 km: 2 easy + 6 @ 5:30–5:35 + 4 easy", "10 km easy", "6 km easy", "26 km long"], ["11 km incl 5×1 km @ 4:45–4:55", "10 km easy", "8 km steady", "30 km long"], ["9 km easy", "9 km easy", "5 km Parkrun", "22 km long"], ["13 km incl 3×3 km @ 5:25–5:35", "10 km easy", "7 km easy", "28 km long"], ["12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy", "10 km easy", "6 km easy", "32 km long"], ["10 km incl 5×1 km threshold", "9 km easy", "6 km easy", "24 km long"], ["11 km incl 6 km marathon pace", "9 km easy", "6 km easy", "28 km long"], ["12 km: 2 easy + 8 @ 5:30–5:35 + 2 easy", "10 km easy", "6 km easy", "30 km long"], ["10 km incl 4×1 km", "9 km easy", "6 km easy", "22 km long"], ["9 km incl 5 km marathon pace", "8 km easy", "5 km easy", "18 km long"], ["8 km incl 4 km marathon pace", "7 km easy", "3 km easy + 4×20-sec strides", "EDINBURGH MARATHON · 42.2 km · 3:55 target"]];
+const start = new Date(Date.UTC(2026,8,30)), anchor = new Date(Date.UTC(2026,9,6));
+let checked=JSON.parse(localStorage.getItem('ed26checked')||'[]'), notes=localStorage.getItem('ed26notes')||'', mode='next';
+const set=new Set(checked);
+const cday=d=>{let n=Math.floor((d-anchor)/86400000);return ((n+3)%8+8)%8+1};
+function dateFor(w,r){let b=new Date(start);b.setUTCDate(b.getUTCDate()+w*7);let target=[2,5,7,8][r],best=null,score=99;for(let i=0;i<7;i++){let d=new Date(b);d.setUTCDate(d.getUTCDate()+i);let cd=cday(d);let s=Math.abs(cd-target)+(r>0&&cd<5?10:0);if(s<score){score=s;best=d}}if(w===34&&r===3)best=new Date(Date.UTC(2027,4,30));return best}
+const fmt=d=>d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',timeZone:'UTC'});
+function save(){localStorage.setItem('ed26checked',JSON.stringify([...set]));localStorage.setItem('ed26notes',document.getElementById('notes').value)}
+function render(){let plan=document.getElementById('plan'),html='',shown=0;for(let w=0;w<runs.length;w++){if(mode==='next'&&shown>=4)break;let ids=runs[w].map((_,r)=>w+'-'+r),ds=runs[w].map((_,r)=>dateFor(w,r)),done=ids.filter(x=>set.has(x)).length;html+=`<div class="week"><div class="weekhead"><b>Week ${w+1}</b><span>${done}/4 complete</span></div>`;for(let r=0;r<4;r++){let id=ids[r],yes=set.has(id);html+=`<label class="run ${yes?'done':''}"><input type="checkbox" data-id="${id}" ${yes?'checked':''}><span><span class="name">Run ${r+1} · ${runs[w][r]}</span><span class="date">${fmt(ds[r])} · shift day ${cday(ds[r])}</span></span></label>`}html+='</div>';shown++}plan.innerHTML=html;let n=set.size,p=Math.round(n/136*100);document.getElementById('count').textContent=n+' / 136';document.getElementById('bar').style.width=p+'%';document.getElementById('pct').textContent=p+'% completed';plan.querySelectorAll('input').forEach(x=>x.onchange=()=>{x.checked?set.add(x.dataset.id):set.delete(x.dataset.id);save();render()})}
+document.getElementById('next').onclick=()=>{mode='next';render()};document.getElementById('full').onclick=()=>{mode='full';render()};document.getElementById('reset').onclick=()=>{if(confirm('Reset all completed runs?')){set.clear();save();render()}};document.getElementById('notes').value=notes;document.getElementById('notes').oninput=save;
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});render();
+</script>
+</body></html>

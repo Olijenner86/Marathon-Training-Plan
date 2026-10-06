@@ -1,0 +1,9 @@
+{
+  "name": "Edinburgh Marathon 2027",
+  "short_name": "Edinburgh Marathon",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#111827",
+  "description": "Shift-pattern marathon training plan for Edinburgh Marathon 2027."
+}
